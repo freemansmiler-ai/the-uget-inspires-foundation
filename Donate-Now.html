@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donate | UGET INSPIRES FOUNDATION</title>
+
+    <link rel="stylesheet" href="Donate.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Paystack -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <a href="index.html" class="logo">
+
+                    <img src="Logo.png" alt="Foundation Logo">
+
+                    <span>THE UGET INSPIRES FOUNDATION</span>
+
+                </a>
+
+                <a href="index.html" class="back-btn">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                    Back Home
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <h1>
+
+                    Make a Difference Today
+
+                </h1>
+
+                <p>
+
+                    Every contribution, no matter the size, helps us provide education, healthcare,
+                    food, shelter and hope to vulnerable children and families.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DONATION SECTION ================= -->
+
+    <section class="donation-section">
+
+        <div class="container">
+
+            <div class="donation-card">
+
+                <div class="card-header">
+
+                    <h2>
+
+                        Donation Form
+
+                    </h2>
+
+                    <p>
+
+                        Please complete the form below before proceeding to payment.
+
+                    </p>
+
+                </div>
+
+                <form id="donationForm">
+
+                    <div class="input-group">
+
+                        <label for="fullname">
+
+                            Full Name
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="email">
+
+                            Email Address
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="phone">
+
+                            Phone Number
+
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="0241234567"
+                            autocomplete="tel"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="amount">
+
+                            Donation Amount (GHS)
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            min="1"
+                            placeholder="100"
+                            autocomplete="off"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="message">
+
+                            Message (Optional)
+
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Leave an encouraging message..."></textarea>
+
+                    </div>
+
+                    <div class="donation-summary">
+
+                        <h3>
+
+                            Donation Summary
+
+                        </h3>
+
+                        <div class="summary-row">
+
+                            <span>Currency</span>
+
+                            <strong>GHS</strong>
+
+                        </div>
+
+                        <div class="summary-row">
+
+                            <span>Payment Method</span>
+
+                            <strong>Paystack</strong>
+
+                        </div>
+
+                        <div class="summary-row total">
+
+                            <span>Total Donation</span>
+
+                            <strong id="displayAmount">
+
+                                GHS 0.00
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="payButton"
+                        class="pay-btn">
+
+                        <i class="fas fa-lock"></i>
+
+                        Proceed to Secure Payment
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- ================= SECURITY SECTION ================= -->
+
+    <section class="security">
+
+        <div class="container">
+
+            <div class="security-grid">
+
+                <div class="security-item">
+
+                    <i class="fas fa-lock"></i>
+
+                    <h3>Secure Payments</h3>
+
+                    <p>
+
+                        Your payment is securely processed through Paystack using bank-level encryption.
+
+                    </p>
+
+                </div>
+
+                <div class="security-item">
+
+                    <i class="fas fa-shield-alt"></i>
+
+                    <h3>Data Protection</h3>
+
+                    <p>
+
+                        We respect your privacy and never share your personal information with third parties.
+
+                    </p>
+
+                </div>
+
+                <div class="security-item">
+
+                    <i class="fas fa-hand-holding-heart"></i>
+
+                    <h3>Your Impact</h3>
+
+                    <p>
+
+                        Every donation supports education, healthcare, food, shelter and community development.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="faq">
+
+        <div class="container">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <h3>Is my payment secure?</h3>
+
+                    <p>
+
+                        Yes. Payments are processed securely through Paystack with encrypted transactions.
+
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>Can I donate using Mobile Money?</h3>
+
+                    <p>
+
+                        Yes. Paystack supports MTN Mobile Money and other supported payment methods depending on your region.
+
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>Will I receive a receipt?</h3>
+
+                    <p>
+
+                        Yes. After a successful payment, Paystack sends a payment confirmation to your email.
+
+                    </p>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <h3>Can I contact the foundation?</h3>
+
+                    <p>
+
+                        Absolutely. Visit the Contact page or reply to your confirmation email for assistance.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>THE UGET INSPIRES FOUNDATION</h3>
+
+                    <p id="inspires">
+
+                        Inspires, Empowers, and Achieve!.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="index.html#about">About</a></li>
+
+                        <li><a href="index.html#causes">Causes</a></li>
+
+                        <li><a href="index.html#contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3>Follow Us</h3>
+
+                    <div class="social-links">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">Powered By SmilerTech
+
+                © <span id="year"></span> THE UGET INSPIRES FOUNDATION.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="donate.js"></script>
+
+</body>
+
+</html>
